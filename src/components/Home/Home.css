@@ -1,0 +1,47 @@
+.container__home {
+    padding: 10% 10%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.container__home__descricao {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.container__home__descricao p {
+    font-size: 1.7rem;
+    color: var(--cor-secundaria);
+}
+
+.container__home__descricao h2 {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--cor-quinta);
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: solid 2px var(--cor-terciaria);
+    margin-bottom: 30px;
+}
+
+.container__home__descricao span {
+    font-size: 1rem;
+    color: var(--cor-quaternaria);
+    font-weight: 200;
+    line-height: 25px;
+    font-weight: 400;
+    display: block;
+}
+
+
+.container__home__imagem {
+    width: 35%;
+}
+
+.container__home__imagem img {
+    width: 100%;
+    border-radius: 30px;
+}

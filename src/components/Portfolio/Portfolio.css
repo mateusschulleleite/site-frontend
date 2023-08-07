@@ -1,0 +1,9 @@
+.container__portfolio {
+    background-color: var(--cor-sexta);
+    padding: 10% 10%;
+}
+
+.container__portfolio__projetos {
+    display: flex;
+    flex-wrap: wrap;
+}

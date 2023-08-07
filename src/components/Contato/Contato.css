@@ -1,0 +1,57 @@
+.container__contato {
+    background-color: var(--cor-primaria);
+}
+
+.container__contato form {
+    width: 400px;
+    background: var(--cor-quinta);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container__contato form fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.container__contato form fieldset label {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.container__contato form fieldset input {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: solid 2px var(--cor-secundaria);
+    background-color: var(--cor-quinta);
+}
+
+.container__contato form fieldset input:active {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: solid 2px var(--cor-secundaria);
+    background-color: var(--cor-quinta);
+}
+
+.container__contato form textarea {
+    border-radius: 10px;
+    background-color: var(--cor-quinta);
+    border: solid 1px var(--cor-secundaria);
+    padding: 10px;
+}
+
+.container__contato form button {
+    background-color: var(--cor-secundaria);
+    border: none;
+    color: var(--cor-quinta);
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
