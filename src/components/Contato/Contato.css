@@ -1,12 +1,36 @@
 .container__contato {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-sexta);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10% 10%;
+}
+
+.container__contato__imagem {
+    display: flex;
+    align-items: center;
+}
+
+.container__contato__imagem img {
+    width: 100%;
 }
 
 .container__contato form {
-    width: 400px;
+    width: 100%;
     background: var(--cor-quinta);
-    padding: 20px;
     border-radius: 20px;
+    border: 3px solid #567ebb;
+    padding: 20px 30px;
+    height: min-content;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+.container__contato form h3{
+    text-align: end;
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    color: var(--cor-secundaria);
 }
 
 .container__contato form fieldset {
@@ -22,19 +46,16 @@
 }
 
 .container__contato form fieldset input {
-    padding: 10px 5px;
+    padding: 20px 20px;
     border-radius: 10px;
     border: none;
     border-bottom: solid 2px var(--cor-secundaria);
     background-color: var(--cor-quinta);
 }
 
-.container__contato form fieldset input:active {
-    padding: 10px 5px;
-    border-radius: 10px;
-    border: none;
-    border-bottom: solid 2px var(--cor-secundaria);
-    background-color: var(--cor-quinta);
+.container__contato form fieldset input:focus {
+    border-color: none;
+    outline: none;
 }
 
 .container__contato form textarea {
@@ -42,7 +63,14 @@
     background-color: var(--cor-quinta);
     border: solid 1px var(--cor-secundaria);
     padding: 10px;
+    margin-top: 20px;
 }
+
+.container__contato form textarea:focus {
+    border-color: none;
+    outline: none;
+}
+
 
 .container__contato form button {
     background-color: var(--cor-secundaria);
@@ -54,4 +82,30 @@
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1920px) {
+    .container__contato form {
+        width: 80%;
+        background: var(--cor-quinta);
+        border-radius: 20px;
+        border: 3px solid #567ebb;
+        padding: 20px 30px;
+        height: min-content;
+        margin: auto 0;
+        box-sizing: border-box;
+    }
+
+    .container__contato form button {
+        background-color: var(--cor-secundaria);
+        border: none;
+        color: var(--cor-quinta);
+        padding: 10px 15px;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
 }

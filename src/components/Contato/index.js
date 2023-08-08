@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contato.css";
 import axios from "axios";
+import contatoImagem from '../../assets/contatp-imagem.svg'
 
 export default function Contato() {
   const [nome, setNome] = useState("");
@@ -12,7 +13,7 @@ export default function Contato() {
 
     try {
       const formData = { nome, email, texto };
-      await axios.post("http://localhost:3001/enviar-formulario", formData);
+      await axios.post("https://portfolio-server-v4xf.onrender.com/enviar-formulario", formData);
       alert("Formulário enviado com sucesso!");
     } catch (error) {
       console.error(error);
@@ -22,7 +23,11 @@ export default function Contato() {
 
   return (
     <section className="container__contato">
+      <div className="container__contato__imagem">
+        <img src={contatoImagem}></img>
+      </div>
       <form onSubmit={handleSubmit} className="contato__formulario">
+        <h3>Vamos conversar?</h3>
         <fieldset>
           <label for="form-name">Nome</label>
           <input

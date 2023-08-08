@@ -32,31 +32,6 @@ export default function Header() {
           <li>Contato</li>
         </ul>
       </nav>
-      {/* <nav>
-         <img
-           className="header__menu-image"
-           onClick={openMenu}
-           src={urlMenuClosed}
-         />
-         <h1>Portfólio</h1>
-         <div className="container__menu">
-           <ul>
-             <Link className="container__menu-link" to='/'>
-               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAw0lEQVR4nO3SMWoCURSF4Q9tXICthW7AImnFyoAuws5pYx0LGzdhoStIGRAsBa0EOxfhKkS4gsgwjr4q4A8HHude/hkej3IMIslUMcNfZBbdS9SxwhSVyDS6y2we6ZSRfeKAfs6sH7Nj/HH2SDbCDs2CnWbsrIuENSywjPMjarH7m7ffwAbfnmeILVrXoosTxl5nHI6LSxs/ZS63gCwc7dsiVZgVFsHk5r1dM0kR7vFxl32q8J638L/e4VcspqSX86F0znQdRAJFA/uNAAAAAElFTkSuQmCC" />
-               Início
-             </Link>
-             <Link className="container__menu-link" to='/projetos'>
-               <img width="25" height="25" src="https://img.icons8.com/ios/20/source-code.png" alt="source-code"/>
-               Projetos</Link>
-             <Link className="container__menu-link" to='/sobre-mim'>
-               <img width="25" height="25" src="https://img.icons8.com/dotty/20/guest-male.png" alt="guest-male"/>
-               Sobre Mim</Link>
-             <Link className="container__menu-link" to='/contato'>
-               <img width="25" height="25" src="https://img.icons8.com/ios-filled/20/calling.png" alt="calling"/>
-               Contato</Link>
-           </ul>
-         </div>
-       </nav> */}
     </header>
   );
 }
