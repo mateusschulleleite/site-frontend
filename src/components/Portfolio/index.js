@@ -9,6 +9,7 @@ import imagemRobotron from '../../assets/robotron.jpg';
 export default function Portfolio() {
   return (
     <section className="container__portfolio">
+      <h2 className="container__portfolio-titulo">Projetos</h2>
       <div className="container__portfolio__projetos">
         <Card
           imagem={imagemCalculadora}

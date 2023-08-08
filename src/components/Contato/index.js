@@ -23,11 +23,11 @@ export default function Contato() {
 
   return (
     <section className="container__contato">
+      <h2 className="container__contato-titulo">Contato</h2>
       <div className="container__contato__imagem">
         <img src={contatoImagem}></img>
       </div>
       <form onSubmit={handleSubmit} className="contato__formulario">
-        <h3>Vamos conversar?</h3>
         <fieldset>
           <label for="form-name">Nome</label>
           <input

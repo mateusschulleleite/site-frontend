@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import imagemTech from '../../assets/usuario.svg';
+import imagemTech from "../../assets/usuario.svg";
 
 export default function Home() {
   return (
@@ -14,6 +14,30 @@ export default function Home() {
           interfaces interativas e responsivas para melhorar a experiência do
           usuário.
         </span>
+        <div className="container__home__redes-sociais">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/mateusschulle">
+                <img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/sf-regular-filled/50/dce0e6/github.png"
+                  alt="github"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/mateusschulleleite">
+                <img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/sf-regular-filled/50/dce0e6/linkedin.png"
+                  alt="github"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="container__home__imagem">
         <img src={imagemTech}></img>
