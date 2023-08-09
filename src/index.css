@@ -1,7 +1,7 @@
 :root {
-    --cor-primaria: #1f1f20;
-    --cor-secundaria: #2b4c7e;
-    --cor-terciaria: #567ebb;
+    --cor-primaria: #000000;
+    --cor-secundaria: #ff4900;
+    --cor-terciaria: #ffffff;
     --cor-quaternaria: #606d80;
     --cor-quinta: #dce0e6;
     --cor-sexta: #161616;
@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 ol, ul {
     list-style: none;

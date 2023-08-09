@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import imagemTech from "../../assets/usuario.svg";
+import imagemTech from "../../assets/imagem-home.svg";
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
             <li>
               <a href="https://www.linkedin.com/in/mateusschulle">
                 <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/sf-regular-filled/50/dce0e6/github.png"
+                  width="60"
+                  height="60"
+                  src="https://img.icons8.com/sf-regular-filled/50/ff4900/github.png"
                   alt="github"
                 />
               </a>
@@ -29,9 +29,9 @@ export default function Home() {
             <li>
               <a href="https://github.com/mateusschulleleite">
                 <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/sf-regular-filled/50/dce0e6/linkedin.png"
+                  width="60"
+                  height="60"
+                  src="https://img.icons8.com/sf-regular-filled/50/ff4900/linkedin.png"
                   alt="github"
                 />
               </a>
