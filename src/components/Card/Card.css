@@ -1,13 +1,15 @@
 .card {
-  width: 250px;
-  height: 310px;
-  border-radius: 20px;
-  background: var(--cor-quinta);
+  width: 210px;
+  height: 240px;
+  background: var(--cor-quaternaria);
   position: relative;
-  border: 2px solid #c3c6ce;
   transition: 0.5s ease-out;
   overflow: visible;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 20px;
  }
 
  .card__imagem img {
@@ -29,14 +31,23 @@
 
  .card__descricao-titulo {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 5px 0;
-  color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+ }
+
+ .card__descricao-titulo::after {
+  content: ' ';
+  width: 10px;
+  border-bottom: solid 2px var(--cor-primaria);
  }
 
  .card__descricao-texto {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: justify;
+  color: var(--cor-quinta);
+  margin-top: 10px;
+  line-height: 16px;
  }
 
  .card__links {

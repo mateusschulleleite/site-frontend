@@ -1,5 +1,5 @@
 .container__portfolio {
-    background-color: var(--cor-sexta);
+    background-color: var(--cor-primaria);
     padding: 10% 10%;
 }
 
@@ -19,4 +19,10 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+.swiper-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
 }

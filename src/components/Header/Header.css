@@ -52,7 +52,7 @@
 }
 
 .container__header__navegacao ul li {
-    color: var(--cor-quinta);
+    color: var(--cor-terciaria);
     border-bottom: solid 3px var(--cor-secundaria);
     margin-bottom: 40px;
     font-weight: 600;
@@ -102,7 +102,7 @@
     }
 
     .container__header__navegacao ul li {
-        color: var(--cor-quinta);
+        color: var(--cor-terciaria);
         border-bottom: none;
         margin-bottom: 0;
         font-weight: 200;
