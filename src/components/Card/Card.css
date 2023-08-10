@@ -3,88 +3,39 @@
   height: 240px;
   background: var(--cor-quaternaria);
   position: relative;
-  transition: 0.5s ease-out;
-  overflow: visible;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
- }
+  text-align: center;
+  margin: 0 auto;
+}
 
- .card__imagem img {
-  width: 100%;
-  height: 150px;
-  border-radius: 20px;
- }
-
- .card:hover {
-  border-color: #008bf8;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-  transform: scale(1.05);
- }
- 
- .card:hover .card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
- }
-
- .card__descricao-titulo {
+.card__descricao-titulo {
   font-weight: 600;
-  font-size: 1.2rem;
-  margin: 5px 0;
+  font-size: 1.1rem;
+  margin: 20px 0 5px 0;
   color: var(--cor-terciaria);
- }
+  position: relative;
+}
 
- .card__descricao-titulo::after {
-  content: ' ';
-  width: 10px;
-  border-bottom: solid 2px var(--cor-primaria);
- }
+.card__descricao-titulo::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  border-bottom: solid 2px var(--cor-secundaria);
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
- .card__descricao-texto {
+.card__descricao-texto {
   font-size: 0.8rem;
-  text-align: justify;
+  text-align: center;
   color: var(--cor-quinta);
   margin-top: 10px;
-  line-height: 16px;
- }
-
- .card__links {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 10px;
-  position: absolute;
-  bottom: 10px;
-  width: 250px;
- }
-
- .card__links__container-links {
-  display: flex;
-  gap: 10px;
- }
-
- .card__links__container-links li {
-  display: flex;
-  gap: 5px;
-  align-items: center;
- }
-
- .card__links__container-links li a {
-  text-decoration: none;
-  color: var(--cor-preto);
- }
-
- .card__links__tecnologias {
-  display: flex;
-  gap: 5px;
- }
-
- .card__links__tecnologias li {
-  background: var(--cor-secundaria);
-  font-size: 0.8rem;
-  padding: 3px;
-  border-radius: 5px;
-  color: var(--cor-quinta);
- }
+  line-height: 17px;
+}
