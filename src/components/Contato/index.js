@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contato.css";
 import axios from "axios";
-import contatoImagem from '../../assets/contatp-imagem.svg'
+import contatoImagem from '../../assets/contato-imagem.svg'
 
 export default function Contato() {
   const [nome, setNome] = useState("");
