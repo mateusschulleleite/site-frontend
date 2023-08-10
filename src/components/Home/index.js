@@ -17,7 +17,7 @@ export default function Home() {
         <div className="container__home__redes-sociais">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/mateusschulle">
+              <a href="https://github.com/mateusschulleleite">
                 <img
                   width="60"
                   height="60"
@@ -27,12 +27,12 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a href="https://github.com/mateusschulleleite">
+              <a href="https://www.linkedin.com/in/mateusschulle">
                 <img
                   width="60"
                   height="60"
                   src="https://img.icons8.com/sf-regular-filled/50/ff4900/linkedin.png"
-                  alt="github"
+                  alt="linkedin"
                 />
               </a>
             </li>

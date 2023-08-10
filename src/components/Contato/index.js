@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import "./Contato.css";
 import axios from "axios";
-import contatoImagem from '../../assets/contato-imagem.svg'
+import contatoImagem from "../../assets/contato-imagem.svg";
+import Load from "../Load";
 
 export default function Contato() {
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    const imageContact = document.querySelector(".container__contato__imagem");
+    const positionY = imageContact.offsetTop;
+    if (scrollPosition >= positionY) {
+      imageContact.classList.add("show");
+    }
+  });
+
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [texto, setTexto] = useState("");
@@ -11,13 +21,42 @@ export default function Contato() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    let loadFormulario = document.querySelector(".load__formulario");
+    loadFormulario.classList.add("show-load");
+
+    let loadFormularioSpin = document.querySelector(".load__formulario__spin");
+    loadFormularioSpin.classList.add("show-load-done");
+    loadFormularioSpin.classList.add("load__rotate");
+
+    let loadFormularioError = document.querySelector('.load__formulario__error');
+
+    let load__formulario__done = document.querySelector(
+      ".load__formulario__done"
+    );
     try {
       const formData = { nome, email, texto };
-      await axios.post("https://portfolio-server-v4xf.onrender.com/enviar-formulario", formData);
-      alert("Formulário enviado com sucesso!");
+      await axios.post(
+        "https://portfolio-server-v4xf.onrender.com/enviar-formulario",
+        formData
+      );
+
+      loadFormularioSpin.classList.remove("load__rotate");
+      loadFormularioSpin.classList.remove("show-load-done");
+      load__formulario__done.classList.add("show-load-done");
+
+      setTimeout(() => {
+        loadFormulario.classList.remove("show-load");
+        load__formulario__done.classList.remove("show-load-done");
+      }, 1000);
     } catch (error) {
-      console.error(error);
-      alert("Ocorreu um erro ao enviar o formulário.");
+      loadFormularioSpin.classList.remove("load__rotate");
+      loadFormularioSpin.classList.remove("show-load-done");
+      loadFormularioError.classList.add("show-load-done");
+
+      setTimeout(() => {
+        loadFormulario.classList.remove("show-load");
+        loadFormularioError.classList.remove("show-load-done");
+      }, 1000);
     }
   };
 
@@ -63,6 +102,7 @@ export default function Contato() {
         </fieldset>
         <button type="submit">Enviar</button>
       </form>
+      <Load />
     </section>
   );
 }

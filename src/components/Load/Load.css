@@ -1,0 +1,45 @@
+.load__formulario {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--cor-quinta);
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.load__formulario img {
+    background-color: var(--cor-primaria);
+    padding: 50px;
+    border-radius: 50%;
+}
+
+.load__formulario__done {
+    display: none;
+}
+
+.load__formulario__spin {
+    display: none;
+}
+
+.load__formulario__error {
+    display: none;
+}
+
+.show-load-done {
+    display: block;
+}
+
+.show-load {
+    display: flex !important;
+}
+
+.load__rotate {
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
