@@ -11,6 +11,13 @@
   padding: 20px;
   text-align: center;
   margin: 0 auto;
+  transition: 500ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 500ms;
+  cursor: pointer;
 }
 
 .card__descricao-titulo {

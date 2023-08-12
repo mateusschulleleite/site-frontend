@@ -6,7 +6,7 @@ export default function Card(props) {
   console.log(tecnologiasUtilizadas);
   return (
     <div class="card">
-      <img width="50" height="50" src={props.imagem}/>
+      <img className="teste" width="50" height="50" src={props.imagem}/>
       <h2 className="card__descricao-titulo">{props.titulo}</h2>
       <p className="card__descricao-texto">{props.descricao}</p>
     </div>

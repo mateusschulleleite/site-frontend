@@ -26,15 +26,34 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
 .swiper-container {
     position: relative;
     overflow: hidden;
-    padding: 25px 0;
+    display: flex;
+    height: 360px;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
 }
 
 .swiper-pagination-bullet {
     background-color: var(--cor-secundaria) !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__portfolio {
+        padding: 0 130px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container__portfolio {
+        padding: 0 15%;
+    }
+
 }

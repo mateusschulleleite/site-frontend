@@ -1,18 +1,18 @@
 .container__contato {
   background-color: var(--cor-primaria);
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 10% 0%;
-  position: relative;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 100vh;
+  padding: 0 30px;
 }
 
 .container__contato-titulo {
   font-size: 1.4rem;
-  text-align: center;
   color: var(--cor-terciaria);
-  position: relative;
+  position: absolute;
   margin-bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container__contato-titulo::after {
@@ -26,40 +26,40 @@
   padding-top: 10px;
 }
 
+.container__contato__imagem {
+  margin-bottom: 0;
+  margin: 50px auto;
+  width: 90%;
+}
+
 .container__contato__imagem img {
   width: 100%;
 }
 
 .container__contato form {
-  width: 95%;
   background: var(--cor-primaria);
   border-radius: 20px;
-  padding: 30px 20px;
-  height: min-content;
-  margin: auto;
-  box-sizing: border-box;
 }
 
 .container__contato form fieldset {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
-  gap: 5px;
 }
 
 .container__contato form fieldset label {
   color: var(--cor-secundaria);
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .container__contato form fieldset input {
-  padding: 15px 10px;
   border-radius: 10px;
   border: none;
   border-bottom: solid 1px var(--cor-secundaria);
   background-color: var(--cor-primaria);
   color: var(--cor-terciaria);
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .container__contato form fieldset input:focus {
@@ -72,10 +72,10 @@
   background-color: var(--cor-primaria);
   border: none;
   border-bottom: solid 1px var(--cor-secundaria);
-  padding: 10px;
-  margin-top: 20px;
-  height: 75px;
   color: var(--cor-terciaria);
+  height: 75px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .container__contato form textarea:focus {
@@ -120,45 +120,95 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .container__contato__imagem {
+    margin-bottom: 0;
+    margin: 50px auto;
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .container__contato {
     background-color: var(--cor-primaria);
-    display: grid;
-    gap: 30px;
-    padding: 10% 10%;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 0 90px;
     position: relative;
   }
 
+  .container__contato form {
+    width: 350px;
+  }
+  
   .container__contato-titulo {
+    font-size: 1.4rem;
+    color: var(--cor-terciaria);
     position: absolute;
-    top: 10%;
     left: 50%;
+    top: 100px;
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container__contato {
+    padding: 0 130px;
+    position: relative;
   }
 
   .container__contato__imagem {
-    margin: auto 0;
+    width: 40%;
   }
 
   .container__contato form {
-    width: 80%;
-    background: var(--cor-primaria);
-    border-radius: 20px;
-    padding: 30px 20px;
-    height: min-content;
-    margin: auto 0;
-    box-sizing: border-box;
-    margin: 0 auto;
+    width: 450px;
+  }
+  
+  .container__contato-titulo {
+    top: 100px;
+  }
+
+  .container__contato form fieldset label {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+
+  .container__contato form fieldset input {
+    padding: 20px 10px;
+  }
+
+  .container__contato form button {
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1920px) {
+ 
   .container__contato__imagem {
-    width: 80%;
-    margin: 0 auto;
+    width: 35%;
+  }
+
+  .container__contato form {
+    width: 600px;
+  }
+
+  .container__contato form fieldset label {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+
+  .container__contato form fieldset input {
+    padding: 20px 10px;
+  }
+
+  .container__contato form button {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  .container__contato form textarea {
+    height: 150px;
   }
 }

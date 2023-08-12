@@ -6,7 +6,9 @@ import "swiper/css/bundle";
 
 export default function Portfolio() {
   let telaSlide = 1;
-  if(window.screen.width >= 1024) {
+  if(window.screen.width >= 1366) {
+    telaSlide = 4;
+  } else if (window.screen.width >= 1024) {
     telaSlide = 3;
   } else if (window.screen.width >= 768) {
     telaSlide = 2;

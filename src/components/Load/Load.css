@@ -2,8 +2,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  left: 0;
   background-color: var(--cor-quinta);
-  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   display: none;
